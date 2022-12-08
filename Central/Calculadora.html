@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="calculadora.js"></script>
+    <title>Calculadora - Plus</title>
+</head>
+
+<body class="container-fluid fundo-calculadora">
+    <header class="header-fundo">
+    </header>
+    <div>
+        <div class="calculadora-posicao">
+            <button id="visor" class="botao-visor" disabled="true"></button>
+            <button id="numero" class="botao-numeros" onclick="insert('1')">1</button>
+            <button id="numero" class="botao-numeros" onclick="insert('2')">2</button>
+            <button id="numero" class="botao-numeros" onclick="insert('3')">3</button>
+            <button id="somar" class="botao-numeros" onclick="insert('+')">+</button>
+            <button id="numero" class="botao-numeros" onclick="insert('4')">4</button>
+            <button id="numero" class="botao-numeros" onclick="insert('5')">5</button>
+            <button id="numero" class="botao-numeros" onclick="insert('6')">6</button>
+            <button id="multiplicar" class="botao-numeros" onclick="insert('*')">*</button>
+            <button id="numero" class="botao-numeros" onclick="insert('7')">7</button>
+            <button id="numero" class="botao-numeros" onclick="insert('8')">8</button>
+            <button id="numero" class="botao-numeros" onclick="insert('9')">9</button>
+            <button id="dividir" class="botao-numeros" onclick="insert('/')">/</button>
+            <button id="zerar" class="botao-numeros" onclick= "clean('C')">C</button>
+            <button id="numero" class="botao-numeros" onclick="insert('0')">0</button>
+            <button id="igual" class="botao-numeros" onclick="Calcular('=')">=</button>
+            <button id="subtracao" class="botao-menos" onclick="insert('-')">-</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
